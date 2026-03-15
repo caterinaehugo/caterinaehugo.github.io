@@ -4,9 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hugo & Caterina</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Nunito:wght@300;400;600&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -14,71 +16,79 @@
     <header class="site-header">
       <div class="banner"></div>
 
+      <div class="top-controls">
+        <div class="language-switcher" aria-label="Language selector">
+          <button class="lang-btn active" data-lang="en">English</button>
+          <button class="lang-btn" data-lang="nl">Nederlands</button>
+          <button class="lang-btn" data-lang="pt-br">Português (BR)</button>
+        </div>
+      </div>
+
       <div class="hero">
-        <h1>Hugo &amp; Caterina</h1>
-        <p class="date">September 12, 2026</p>
-        <p class="countdown">181 days to go!</p>
+        <h1 data-i18n="names">Hugo &amp; Caterina</h1>
+        <p class="date" data-i18n="date">September 12, 2026</p>
+        <p class="countdown" data-i18n="countdown">181 days to go!</p>
       </div>
 
       <nav class="main-nav" aria-label="Wedding site navigation">
-        <button class="tab-link active" data-tab="home">Home</button>
-        <button class="tab-link" data-tab="photos">Photos</button>
-        <button class="tab-link" data-tab="party">Wedding Party</button>
-        <button class="tab-link" data-tab="qa">Q + A</button>
-        <button class="tab-link" data-tab="travel">Travel</button>
-        <button class="tab-link" data-tab="things">Things To Do</button>
-        <button class="tab-link" data-tab="registry">Registry</button>
+        <button class="tab-link active" data-tab="home" data-i18n="nav_home">Home</button>
+        <button class="tab-link" data-tab="photos" data-i18n="nav_photos">Photos</button>
+        <button class="tab-link" data-tab="party" data-i18n="nav_party">Wedding Party</button>
+        <button class="tab-link" data-tab="qa" data-i18n="nav_qa">Q + A</button>
+        <button class="tab-link" data-tab="travel" data-i18n="nav_travel">Travel</button>
+        <button class="tab-link" data-tab="things" data-i18n="nav_things">Things To Do</button>
+        <button class="tab-link" data-tab="registry" data-i18n="nav_registry">Registry</button>
       </nav>
     </header>
 
     <main class="content">
       <section id="home" class="tab-panel active">
-        <h2>Welcome</h2>
-        <p>
+        <h2 data-i18n="home_title">Welcome</h2>
+        <p data-i18n="home_text">
           We’re so excited to celebrate with you. This website will have everything
           you need for the big day, including travel info, schedule details, and more.
         </p>
       </section>
 
       <section id="photos" class="tab-panel">
-        <h2>Photos</h2>
-        <p>
+        <h2 data-i18n="photos_title">Photos</h2>
+        <p data-i18n="photos_text">
           Engagement photos and favorite memories coming soon.
         </p>
       </section>
 
       <section id="party" class="tab-panel">
-        <h2>Wedding Party</h2>
-        <p>
+        <h2 data-i18n="party_title">Wedding Party</h2>
+        <p data-i18n="party_text">
           Meet the people standing by our side on our special day.
         </p>
       </section>
 
       <section id="qa" class="tab-panel">
-        <h2>Q + A</h2>
-        <p>
+        <h2 data-i18n="qa_title">Q + A</h2>
+        <p data-i18n="qa_text">
           Add answers here for dress code, ceremony time, children, transportation,
           and other common questions.
         </p>
       </section>
 
       <section id="travel" class="tab-panel">
-        <h2>Travel</h2>
-        <p>
+        <h2 data-i18n="travel_title">Travel</h2>
+        <p data-i18n="travel_text">
           Hotel blocks, airport details, and transportation recommendations will be posted here.
         </p>
       </section>
 
       <section id="things" class="tab-panel">
-        <h2>Things To Do</h2>
-        <p>
+        <h2 data-i18n="things_title">Things To Do</h2>
+        <p data-i18n="things_text">
           Share your favorite restaurants, sightseeing ideas, and local spots for guests.
         </p>
       </section>
 
       <section id="registry" class="tab-panel">
-        <h2>Registry</h2>
-        <p>
+        <h2 data-i18n="registry_title">Registry</h2>
+        <p data-i18n="registry_text">
           Your registry links can go here when you’re ready.
         </p>
       </section>
@@ -98,6 +108,109 @@
 
         button.classList.add("active");
         document.getElementById(target).classList.add("active");
+      });
+    });
+
+    const translations = {
+      en: {
+        names: "Hugo & Caterina",
+        date: "September 12, 2026",
+        countdown: "181 days to go!",
+        nav_home: "Home",
+        nav_photos: "Photos",
+        nav_party: "Wedding Party",
+        nav_qa: "Q + A",
+        nav_travel: "Travel",
+        nav_things: "Things To Do",
+        nav_registry: "Registry",
+        home_title: "Welcome",
+        home_text: "We’re so excited to celebrate with you. This website will have everything you need for the big day, including travel info, schedule details, and more.",
+        photos_title: "Photos",
+        photos_text: "Engagement photos and favorite memories coming soon.",
+        party_title: "Wedding Party",
+        party_text: "Meet the people standing by our side on our special day.",
+        qa_title: "Q + A",
+        qa_text: "Add answers here for dress code, ceremony time, children, transportation, and other common questions.",
+        travel_title: "Travel",
+        travel_text: "Hotel blocks, airport details, and transportation recommendations will be posted here.",
+        things_title: "Things To Do",
+        things_text: "Share your favorite restaurants, sightseeing ideas, and local spots for guests.",
+        registry_title: "Registry",
+        registry_text: "Your registry links can go here when you’re ready."
+      },
+      nl: {
+        names: "Hugo & Caterina",
+        date: "12 september 2026",
+        countdown: "Nog 181 dagen!",
+        nav_home: "Home",
+        nav_photos: "Foto's",
+        nav_party: "Bruidsfeest",
+        nav_qa: "Vragen",
+        nav_travel: "Reizen",
+        nav_things: "Tips in de buurt",
+        nav_registry: "Cadeaulijst",
+        home_title: "Welkom",
+        home_text: "We vinden het ontzettend fijn om deze bijzondere dag met jullie te vieren. Op deze website vind je alle informatie over de bruiloft, zoals reizen, planning en meer.",
+        photos_title: "Foto's",
+        photos_text: "Verlovingsfoto's en mooie herinneringen volgen binnenkort.",
+        party_title: "Bruidsfeest",
+        party_text: "Maak kennis met de mensen die op deze speciale dag naast ons staan.",
+        qa_title: "Vragen",
+        qa_text: "Hier vind je later antwoorden op vragen over dresscode, tijdschema, kinderen, vervoer en andere praktische zaken.",
+        travel_title: "Reizen",
+        travel_text: "Hotelinformatie, luchthavenopties en vervoerstips komen hier binnenkort te staan.",
+        things_title: "Tips in de buurt",
+        things_text: "Hier delen we leuke restaurants, bezienswaardigheden en favoriete plekjes in de omgeving.",
+        registry_title: "Cadeaulijst",
+        registry_text: "Hier komen later de links naar onze cadeaulijst."
+      },
+      "pt-br": {
+        names: "Hugo & Caterina",
+        date: "12 de setembro de 2026",
+        countdown: "Faltam 181 dias!",
+        nav_home: "Início",
+        nav_photos: "Fotos",
+        nav_party: "Padrinhos",
+        nav_qa: "Perguntas",
+        nav_travel: "Viagem",
+        nav_things: "O Que Fazer",
+        nav_registry: "Lista de Presentes",
+        home_title: "Bem-vindos",
+        home_text: "Estamos muito felizes em celebrar esse momento com vocês. Neste site vocês encontrarão todas as informações importantes sobre o casamento, incluindo viagem, programação e muito mais.",
+        photos_title: "Fotos",
+        photos_text: "Fotos do noivado e memórias especiais em breve.",
+        party_title: "Padrinhos",
+        party_text: "Conheça as pessoas queridas que estarão ao nosso lado nesse dia especial.",
+        qa_title: "Perguntas",
+        qa_text: "Aqui colocaremos respostas sobre traje, horário da cerimônia, crianças, transporte e outras dúvidas frequentes.",
+        travel_title: "Viagem",
+        travel_text: "Informações sobre hotéis, aeroportos e transporte serão publicadas aqui em breve.",
+        things_title: "O Que Fazer",
+        things_text: "Compartilharemos aqui restaurantes, passeios e lugares especiais para os convidados aproveitarem a região.",
+        registry_title: "Lista de Presentes",
+        registry_text: "Os links da nossa lista de presentes poderão ser colocados aqui quando estiver tudo pronto."
+      }
+    };
+
+    const langButtons = document.querySelectorAll(".lang-btn");
+
+    function setLanguage(lang) {
+      document.documentElement.lang = lang;
+
+      document.querySelectorAll("[data-i18n]").forEach((el) => {
+        const key = el.dataset.i18n;
+        if (translations[lang] && translations[lang][key]) {
+          el.textContent = translations[lang][key];
+        }
+      });
+
+      langButtons.forEach((btn) => btn.classList.remove("active"));
+      document.querySelector(`.lang-btn[data-lang="${lang}"]`).classList.add("active");
+    }
+
+    langButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        setLanguage(button.dataset.lang);
       });
     });
   </script>
