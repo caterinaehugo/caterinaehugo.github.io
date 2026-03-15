@@ -74,7 +74,6 @@ body {
   justify-content: center;
   gap: 12px;
   padding: 10px 14px;
-  border-radius: 999px;
   background: transparent;
   box-shadow: none;
   border-radius: 0;
@@ -174,6 +173,16 @@ body {
   letter-spacing: -0.02em;
   color: var(--text);
 }
+
+.main-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 14px 22px;
+    padding: 10px 20px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 
 .tab-link {
   appearance: none;
@@ -277,15 +286,7 @@ body {
   }
 
  
-  .main-nav {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 14px 22px;
-    padding: 10px 20px 0;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
+  
 
   .tab-link {
     font-size: 0.8rem;
