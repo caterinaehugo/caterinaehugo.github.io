@@ -75,9 +75,10 @@ body {
   gap: 12px;
   padding: 10px 14px;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.72);
-  box-shadow: 0 10px 30px rgba(86, 112, 115, 0.08);
-  backdrop-filter: blur(8px);
+  background: transparent;
+  box-shadow: none;
+  border-radius: 0;
+  backdrop-filter: none;
 }
 
 .lang-btn {
