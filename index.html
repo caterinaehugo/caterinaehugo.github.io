@@ -4,40 +4,35 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hugo & Caterina</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap"
-    rel="stylesheet"
-  />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <div class="page">
+    <header class="site-header">
+      <div class="banner"></div>
 
-    <!-- Decorative leaves -->
-    <div class="leaf leaf-left"></div>
-    <div class="leaf leaf-center"></div>
-    <div class="leaf leaf-right"></div>
+      <div class="hero">
+        <h1>Hugo &amp; Caterina</h1>
+        <p class="date">September 12, 2026</p>
+        <p class="countdown">181 days to go!</p>
+      </div>
 
-    <header class="hero">
-      <h1>Hugo &amp; Caterina</h1>
-      <p class="date">September 12, 2026</p>
-      <p class="countdown">181 days to go!</p>
+      <nav class="main-nav" aria-label="Wedding site navigation">
+        <button class="tab-link active" data-tab="home">Home</button>
+        <button class="tab-link" data-tab="photos">Photos</button>
+        <button class="tab-link" data-tab="party">Wedding Party</button>
+        <button class="tab-link" data-tab="qa">Q + A</button>
+        <button class="tab-link" data-tab="travel">Travel</button>
+        <button class="tab-link" data-tab="things">Things To Do</button>
+        <button class="tab-link" data-tab="registry">Registry</button>
+      </nav>
     </header>
 
-    <nav class="main-nav">
-      <a href="#home">Home</a>
-      <a href="#photos">Photos</a>
-      <a href="#party">Wedding Party</a>
-      <a href="#qa">Q + A</a>
-      <a href="#travel" class="active">Travel</a>
-      <a href="#things">Things To Do</a>
-      <a href="#registry">Registry</a>
-    </nav>
-
     <main class="content">
-      <section id="home" class="section">
+      <section id="home" class="tab-panel active">
         <h2>Welcome</h2>
         <p>
           We’re so excited to celebrate with you. This website will have everything
@@ -45,17 +40,21 @@
         </p>
       </section>
 
-      <section id="photos" class="section">
+      <section id="photos" class="tab-panel">
         <h2>Photos</h2>
-        <p>Engagement photos and favorite memories coming soon.</p>
+        <p>
+          Engagement photos and favorite memories coming soon.
+        </p>
       </section>
 
-      <section id="party" class="section">
+      <section id="party" class="tab-panel">
         <h2>Wedding Party</h2>
-        <p>Meet the people standing by our side on our special day.</p>
+        <p>
+          Meet the people standing by our side on our special day.
+        </p>
       </section>
 
-      <section id="qa" class="section">
+      <section id="qa" class="tab-panel">
         <h2>Q + A</h2>
         <p>
           Add answers here for dress code, ceremony time, children, transportation,
@@ -63,23 +62,44 @@
         </p>
       </section>
 
-      <section id="travel" class="section">
-        <h2>Travel Coming Soon!</h2>
+      <section id="travel" class="tab-panel">
+        <h2>Travel</h2>
         <p>
           Hotel blocks, airport details, and transportation recommendations will be posted here.
         </p>
       </section>
 
-      <section id="things" class="section">
+      <section id="things" class="tab-panel">
         <h2>Things To Do</h2>
-        <p>Share your favorite restaurants, sightseeing ideas, and local spots for guests.</p>
+        <p>
+          Share your favorite restaurants, sightseeing ideas, and local spots for guests.
+        </p>
       </section>
 
-      <section id="registry" class="section">
+      <section id="registry" class="tab-panel">
         <h2>Registry</h2>
-        <p>Your registry links can go here when you’re ready.</p>
+        <p>
+          Your registry links can go here when you’re ready.
+        </p>
       </section>
     </main>
   </div>
+
+  <script>
+    const tabLinks = document.querySelectorAll(".tab-link");
+    const tabPanels = document.querySelectorAll(".tab-panel");
+
+    tabLinks.forEach((button) => {
+      button.addEventListener("click", () => {
+        const target = button.dataset.tab;
+
+        tabLinks.forEach((btn) => btn.classList.remove("active"));
+        tabPanels.forEach((panel) => panel.classList.remove("active"));
+
+        button.classList.add("active");
+        document.getElementById(target).classList.add("active");
+      });
+    });
+  </script>
 </body>
 </html>
