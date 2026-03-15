@@ -142,6 +142,16 @@ body {
   line-height: 1.05;
 }
 
+.hero-photo {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  margin: 18px auto 6px;
+  border-radius: 18px;
+  box-shadow: 0 10px 24px rgba(86, 112, 115, 0.10);
+  object-fit: cover;
+}
+
 .date,
 .countdown {
   margin: 0;
@@ -242,16 +252,6 @@ body {
   line-height: 1.9;
   font-size: 1.08rem;
   font-weight: 400;
-}
-
-.home-photo {
-  display: block;
-  width: 100%;
-  max-width: 520px;
-  margin: 0 auto 28px;
-  border-radius: 20px;
-  box-shadow: 0 12px 30px rgba(86, 112, 115, 0.12);
-  object-fit: cover;
 }
 
 @media (max-width: 900px) {
