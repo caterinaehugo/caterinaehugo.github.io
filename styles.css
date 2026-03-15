@@ -185,8 +185,8 @@ body {
 }
 
 .maps-icon {
-  width: 20px;
-  height: 20px;
+  width: 36px;
+  height: 36px;
   display: block;
   transition: transform 0.2s ease;
 }
