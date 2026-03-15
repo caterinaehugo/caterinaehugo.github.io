@@ -254,6 +254,18 @@ body {
   font-weight: 400;
 }
 
+.email-link {
+  color: var(--accent-deep);
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(110, 138, 134, 0.35);
+}
+
+.email-link:hover {
+  text-decoration: none;
+  border-bottom-color: var(--accent-deep);
+}
+
 @media (max-width: 900px) {
   .banner {
     height: 220px;
