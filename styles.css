@@ -167,16 +167,7 @@ body {
   color: var(--text-soft);
 }
 
-.location-line {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-  margin: 0;
-}
-
 .location {
-  margin: 0;
   margin-top: 24px;
   font-size: 1rem;
   font-weight: 500;
@@ -188,13 +179,20 @@ body {
 .maps-link {
   display: inline-flex;
   align-items: center;
-  line-height: 1;
+  justify-content: center;
+  margin-top: 10px;
+  text-decoration: none;
 }
 
 .maps-icon {
-  width: 18px;
-  height: 18px;
+  width: 36px;
+  height: 36px;
   display: block;
+  transition: transform 0.2s ease;
+}
+
+.maps-link:hover .maps-icon {
+  transform: scale(1.08);
 }
 
 .countdown {
