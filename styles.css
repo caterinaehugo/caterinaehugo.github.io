@@ -19,6 +19,25 @@ html, body {
   padding: 0;
 }
 
+.maps-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+.maps-icon {
+  width: 36px;
+  height: 36px;
+  display: block;
+  transition: transform 0.2s ease;
+}
+
+.maps-link:hover .maps-icon {
+  transform: scale(1.08);
+}
+
 body {
   background: linear-gradient(to bottom, #f3f1eb 0%, #f8f5f0 100%);
   color: var(--text);
