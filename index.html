@@ -221,7 +221,7 @@
         if (key === "countdown") return;
 
         if (translations[lang] && translations[lang][key]) {
-          if (key === "rsvp_text") {
+          if (key === "rsvp_text" || key === "logistics_text" ) {
             el.innerHTML = translations[lang][key];
           } else {
             el.textContent = translations[lang][key];
