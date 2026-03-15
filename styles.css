@@ -244,6 +244,16 @@ body {
   font-weight: 400;
 }
 
+.home-photo {
+  display: block;
+  width: 100%;
+  max-width: 520px;
+  margin: 0 auto 28px;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(86, 112, 115, 0.12);
+  object-fit: cover;
+}
+
 @media (max-width: 900px) {
   .banner {
     height: 220px;
