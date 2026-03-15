@@ -1,0 +1,287 @@
+:root {
+  --bg: #f4f4f2;
+  --text: #40555a;
+  --muted: #61767b;
+  --accent: #6fa36f;
+  --line: #4f666b;
+  --white: rgba(255, 255, 255, 0.55);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+.page {
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+  padding: 60px 20px 100px;
+}
+
+/* Decorative watercolor-style leaf placeholders */
+.leaf {
+  position: absolute;
+  opacity: 0.7;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.leaf::before,
+.leaf::after {
+  content: "";
+  position: absolute;
+  border-radius: 60% 0 60% 0;
+  transform: rotate(-20deg);
+  filter: blur(0.3px);
+}
+
+.leaf-left {
+  top: -30px;
+  left: -40px;
+  width: 320px;
+  height: 230px;
+}
+
+.leaf-left::before {
+  width: 220px;
+  height: 36px;
+  background: linear-gradient(90deg, #9fb8b4, #6f9093);
+  top: 10px;
+  left: 10px;
+  transform: rotate(-55deg);
+  box-shadow:
+    35px 50px 0 0 #a8c1bc,
+    70px 100px 0 0 #91aca8,
+    105px 145px 0 0 #b5c8c0;
+}
+
+.leaf-left::after {
+  width: 12px;
+  height: 180px;
+  background: #85a09e;
+  top: 25px;
+  left: 90px;
+  transform: rotate(-40deg);
+  border-radius: 20px;
+}
+
+.leaf-center {
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 220px;
+  height: 150px;
+}
+
+.leaf-center::before {
+  width: 170px;
+  height: 90px;
+  background: linear-gradient(135deg, #b5d58f, #7cad61);
+  top: 0;
+  left: 25px;
+  transform: rotate(-10deg);
+  border-radius: 45% 15% 45% 15%;
+}
+
+.leaf-center::after {
+  width: 6px;
+  height: 110px;
+  background: #7e9d66;
+  top: 15px;
+  left: 102px;
+  transform: rotate(20deg);
+  border-radius: 20px;
+}
+
+.leaf-right {
+  top: -20px;
+  right: -40px;
+  width: 320px;
+  height: 230px;
+}
+
+.leaf-right::before {
+  width: 220px;
+  height: 36px;
+  background: linear-gradient(90deg, #9fb8b4, #6f9093);
+  top: 10px;
+  right: 10px;
+  transform: rotate(55deg);
+  box-shadow:
+    -35px 50px 0 0 #a8c1bc,
+    -70px 100px 0 0 #91aca8,
+    -105px 145px 0 0 #b5c8c0;
+}
+
+.leaf-right::after {
+  width: 12px;
+  height: 180px;
+  background: #85a09e;
+  top: 25px;
+  right: 90px;
+  transform: rotate(40deg);
+  border-radius: 20px;
+}
+
+.hero {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding-top: 120px;
+  padding-bottom: 40px;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: clamp(2.5rem, 5vw, 4.6rem);
+  font-weight: 300;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--text);
+}
+
+.date,
+.countdown {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: var(--muted);
+}
+
+.date {
+  margin-top: 48px;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.countdown {
+  margin-top: 10px;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.main-nav {
+  position: relative;
+  z-index: 1;
+  margin-top: 55px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 18px 34px;
+  padding: 0 10px;
+}
+
+.main-nav a {
+  position: relative;
+  text-decoration: none;
+  color: var(--text);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.95rem;
+  font-weight: 400;
+  padding-bottom: 8px;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+  color: var(--text);
+}
+
+.main-nav a.active::after,
+.main-nav a:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 3px;
+  background: var(--line);
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+  margin: 90px auto 0;
+}
+
+.section {
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.section h2 {
+  margin: 0 0 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: clamp(1.8rem, 3vw, 3rem);
+  font-weight: 400;
+  color: var(--text);
+}
+
+.section p {
+  max-width: 680px;
+  margin: 0 auto;
+  line-height: 1.9;
+  font-size: 1rem;
+  color: var(--muted);
+}
+
+@media (max-width: 768px) {
+  .page {
+    padding-top: 30px;
+  }
+
+  .hero {
+    padding-top: 100px;
+  }
+
+  .hero h1 {
+    letter-spacing: 0.12em;
+  }
+
+  .date,
+  .countdown {
+    letter-spacing: 0.14em;
+  }
+
+  .main-nav {
+    gap: 14px 20px;
+  }
+
+  .main-nav a {
+    font-size: 0.82rem;
+    letter-spacing: 0.14em;
+  }
+
+  .leaf-left,
+  .leaf-right {
+    width: 220px;
+    height: 180px;
+  }
+
+  .leaf-center {
+    width: 160px;
+    height: 120px;
+  }
+
+  .content {
+    margin-top: 60px;
+  }
+
+  .section {
+    padding: 50px 10px;
+  }
+}
