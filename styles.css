@@ -238,7 +238,7 @@ body {
 .tab-panel p {
   margin: 0 auto;
   max-width: 720px;
-  color: var(--text);
+  color: var(--text-soft);
   line-height: 1.9;
   font-size: 1.08rem;
   font-weight: 400;
