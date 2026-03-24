@@ -300,9 +300,20 @@ body {
   text-align: center;
   font-size: 1.08rem;
   color: var(--text-soft);
-  margin: 0 auto 40px;
+  margin: 0 auto 48px;
   max-width: 560px;
   line-height: 1.8;
+}
+
+.logistics-anchor {
+  color: var(--accent-deep);
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(110, 138, 134, 0.35);
+}
+
+.logistics-anchor:hover {
+  border-bottom-color: var(--accent-deep);
 }
 
 .logistics-section {
