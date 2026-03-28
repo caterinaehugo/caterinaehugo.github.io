@@ -319,7 +319,7 @@
         if (key === "countdown") return;
 
         if (translations[lang] && translations[lang][key]) {
-          if (key === "rsvp_text" || key === "logistics_text" ) {
+          if (key === "rsvp_text" || key === "logistics_text" || key === "party_text" ) {
             el.innerHTML = translations[lang][key];
           } else {
             el.textContent = translations[lang][key];
