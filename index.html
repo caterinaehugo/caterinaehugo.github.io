@@ -358,10 +358,105 @@
         rsvp_text: 'Pedimos, por favor, que nos avisem até <strong>12 de julho de 2026</strong> se poderão vir e com quantos convidados estarão presentes. Vocês podem enviar a confirmação para <a href="mailto:caterinaehugo@gmail.com" class="email-link">caterinaehugo@gmail.com</a>. Estamos muito felizes para celebrar juntos.',
         nav_party: "Dia do Casamento",
         party_title: "Dia do Casamento",
-        party_text: "Conheça as pessoas que estarão ao nosso lado nesse dia tão especial.",
+        party_text: party_text: `
+          <div class="logistics-section" id="party-schedule">
+            <div class="logistics-heading">
+              <span class="logistics-icon">🕒</span>
+              <h3>Programação</h3>
+            </div>
+            <div class="logistics-card">
+              <p><strong>15:30–16:00</strong><br>🥂 Drinks de boas-vindas</p>
+              <p><strong>16:00–17:00</strong><br>👰🤵 Cerimônia</p>
+              <p><strong>17:00–18:00</strong><br>🍰 Recepção</p>
+              <p><strong>A partir das 18:00</strong><br>💃 Comida e festa</p>
+            </div>
+          </div>
+        
+          <hr class="logistics-divider">
+        
+          <div class="logistics-section" id="party-dress-code">
+            <div class="logistics-heading">
+              <span class="logistics-icon">👗</span>
+              <h3>Traje</h3>
+            </div>
+            <div class="logistics-card">
+              <p>
+                Fiquem à vontade para vir do jeito que fizer vocês se sentirem confortáveis e mais vocês mesmos —
+                ficaremos felizes com o estilo que cada um preferir.
+              </p>
+            </div>
+          </div>
+        `,
         nav_logistics: "Logística",
         logistics_title: "Logística",
-        logistics_text: "Aqui vocês encontrarão informações sobre como chegar, transporte, hospedagem, traje, crianças, etc.",
+        logistics_text: logistics_text: `
+          <p class="logistics-page-intro">Tudo o que vocês precisam para planejar a viagem para Juquehy para o casamento: <a href="#logistics-venue" class="logistics-anchor">local do casamento</a>, <a href="#logistics-getting-there" class="logistics-anchor">como chegar</a> e <a href="#logistics-accommodation" class="logistics-anchor">hospedagem</a>.</p>
+        
+          <div class="logistics-section" id="logistics-venue">
+            <div class="logistics-heading">
+              <span class="logistics-icon">📍</span>
+              <h3>Local do casamento</h3>
+            </div>
+            <div class="logistics-card">
+              <p class="venue-name">Vila Rudá</p>
+              <p class="venue-address">Rua Claudio Isidoro Espirito Santo, 818<br>Juquehy, São Sebastião - SP, 11600-000</p>
+              <div class="venue-links">
+                <a href="https://maps.app.goo.gl/2MesBx7myK8R6cSw9" target="_blank" rel="noopener noreferrer" class="venue-link-btn">📌 Abrir no Google Maps</a>
+                <a href="https://www.vilaruda.com.br/contato" target="_blank" rel="noopener noreferrer" class="venue-link-btn">🌐 Site do local</a>
+              </div>
+            </div>
+          </div>
+        
+          <hr class="logistics-divider">
+        
+          <div class="logistics-section" id="logistics-getting-there">
+            <div class="logistics-heading">
+              <span class="logistics-icon">✈️</span>
+              <h3>Como chegar</h3>
+            </div>
+            <div class="logistics-card logistics-intro-card">
+              <p>A forma mais fácil de chegar ao local é de carro. Para quem vem do exterior, recomendamos voar para <strong>São Paulo (Aeroporto de Guarulhos)</strong>, que fica a cerca de 2,5 horas de carro do local do casamento.</p>
+            </div>
+        
+            <div class="transport-grid">
+              <div class="logistics-card transport-card">
+                <p class="transport-title">🚗 Aluguel de carro</p>
+                <p>Recomendamos a <a href="https://www.localiza.com/others/en-us" target="_blank" rel="noopener noreferrer">Localiza</a> — é prática de usar e tem unidades em todo o país. Eles já ofereceram 15% de desconto para novos usuários com o código <strong>VAIDELOCALIZA</strong>.</p>
+              </div>
+        
+              <div class="logistics-card transport-card">
+                <p class="transport-title">🚕 Táxi do aeroporto</p>
+                <p>Um táxi do aeroporto de GRU até Juquehy custa em torno de <strong>R$775</strong> com a <a href="https://guarucoop.com.br/en/booking" target="_blank" rel="noopener noreferrer">Guarucoop</a>.</p>
+              </div>
+        
+              <div class="logistics-card transport-card">
+                <p class="transport-title">📱 Uber</p>
+                <p>O Uber provavelmente sai mais barato, mas pode ser mais difícil de conseguir porque muitos motoristas não gostam de fazer viagens para outra cidade. Ainda assim, vale a pena tentar!</p>
+              </div>
+        
+              <div class="logistics-card transport-card">
+                <p class="transport-title">🚌 Ônibus</p>
+                <p>Há um <a href="https://www.clickbus.com.br/onibus/guarulhos-sp-todos/sao-sebastiao-sp" target="_blank" rel="noopener noreferrer">ônibus do aeroporto de GRU para o centro de São Sebastião</a>. Isso pode ser um pouco mais difícil para quem não fala português. O ônibus passa por Juquehy, mas pode não parar lá, então recomendamos combinar isso com o motorista.</p>
+              </div>
+            </div>
+          </div>
+        
+          <hr class="logistics-divider">
+        
+          <div class="logistics-section" id="logistics-accommodation">
+            <div class="logistics-heading">
+              <span class="logistics-icon">🏨</span>
+              <h3>Hospedagem</h3>
+            </div>
+            <div class="logistics-card">
+              <p>Vamos ficar no local do casamento durante o fim de semana com alguns de nossos amigos e familiares mais próximos. Juquehy tem várias opções de hospedagem, que vocês podem encontrar nas plataformas abaixo ou diretamente nos sites de hotéis e pousadas da região.</p>
+              <div class="venue-links">
+                <a href="https://www.airbnb.com/s/Juquehy--S%C3%A3o-Sebasti%C3%A3o/homes" target="_blank" rel="noopener noreferrer" class="venue-link-btn">Airbnb</a>
+                <a href="https://www.booking.com/searchresults.html?ss=Juquehy" target="_blank" rel="noopener noreferrer" class="venue-link-btn">Booking.com</a>
+              </div>
+            </div>
+          </div>
+        `,
         nav_registry: "Lista de Presentes",
         registry_title: "Lista de Presentes",
         registry_text: "Os links da nossa lista de presentes poderão ser colocados aqui quando estiver tudo pronto."
