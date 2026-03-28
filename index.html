@@ -244,10 +244,105 @@
         rsvp_text: 'Laat ons alsjeblieft vóór <strong>12 juli 2026</strong> weten of jullie erbij kunnen zijn, en met hoeveel gasten jullie komen. Jullie kunnen jullie RSVP sturen naar <a href="mailto:caterinaehugo@gmail.com" class="email-link">caterinaehugo@gmail.com</a>. We kijken er enorm naar uit om dit samen te vieren.',
         nav_party: "Trouwdag",
         party_title: "Trouwdag",
-        party_text: "Maak kennis met de mensen die op onze speciale dag aan onze zijde staan.",
+        party_text: party_text: `
+          <div class="logistics-section" id="party-schedule">
+            <div class="logistics-heading">
+              <span class="logistics-icon">🕒</span>
+              <h3>Programma</h3>
+            </div>
+            <div class="logistics-card">
+              <p><strong>15:30–16:00</strong><br>🥂 Welkomstdrankjes</p>
+              <p><strong>16:00–17:00</strong><br>👰🤵 Ceremonie</p>
+              <p><strong>17:00–18:00</strong><br>🍰 Receptie</p>
+              <p><strong>Vanaf 18:00</strong><br>💃 Eten en feest</p>
+            </div>
+          </div>
+        
+          <hr class="logistics-divider">
+        
+          <div class="logistics-section" id="party-dress-code">
+            <div class="logistics-heading">
+              <span class="logistics-icon">👗</span>
+              <h3>Dresscode</h3>
+            </div>
+            <div class="logistics-card">
+              <p>
+                Kom vooral in iets waarin je je prettig voelt en helemaal jezelf bent —
+                we vinden het fijn als iedereen zich kleedt zoals hij of zij wil.
+              </p>
+            </div>
+          </div>
+        `,
         nav_logistics: "Praktische info",
         logistics_title: "Praktische info",
-        logistics_text: "Hier komt informatie over hoe je er komt, vervoer, accommodatie, dresscode, kinderen, enzovoort.",
+        logistics_text: logistics_text: `
+          <p class="logistics-page-intro">Alles wat je nodig hebt om je reis naar Juquehy voor de bruiloft te plannen: <a href="#logistics-venue" class="logistics-anchor">trouwlocatie</a>, <a href="#logistics-getting-there" class="logistics-anchor">hoe er te komen</a> en <a href="#logistics-accommodation" class="logistics-anchor">accommodatie</a>.</p>
+        
+          <div class="logistics-section" id="logistics-venue">
+            <div class="logistics-heading">
+              <span class="logistics-icon">📍</span>
+              <h3>Trouwlocatie</h3>
+            </div>
+            <div class="logistics-card">
+              <p class="venue-name">Vila Rudá</p>
+              <p class="venue-address">Rua Claudio Isidoro Espirito Santo, 818<br>Juquehy, São Sebastião - SP, 11600-000</p>
+              <div class="venue-links">
+                <a href="https://maps.app.goo.gl/2MesBx7myK8R6cSw9" target="_blank" rel="noopener noreferrer" class="venue-link-btn">📌 Open in Google Maps</a>
+                <a href="https://www.vilaruda.com.br/contato" target="_blank" rel="noopener noreferrer" class="venue-link-btn">🌐 Website van de locatie</a>
+              </div>
+            </div>
+          </div>
+        
+          <hr class="logistics-divider">
+        
+          <div class="logistics-section" id="logistics-getting-there">
+            <div class="logistics-heading">
+              <span class="logistics-icon">✈️</span>
+              <h3>Hoe kom je er?</h3>
+            </div>
+            <div class="logistics-card logistics-intro-card">
+              <p>De makkelijkste manier om de locatie te bereiken is met de auto. Voor gasten die uit het buitenland komen, raden we aan om naar <strong>São Paulo (Aeroporto de Guarulhos)</strong> te vliegen. Vanaf daar is het ongeveer 2,5 uur rijden naar de trouwlocatie.</p>
+            </div>
+        
+            <div class="transport-grid">
+              <div class="logistics-card transport-card">
+                <p class="transport-title">🚗 Auto huren</p>
+                <p>We raden <a href="https://www.localiza.com/others/en-us" target="_blank" rel="noopener noreferrer">Localiza</a> aan — zij zijn prettig in gebruik en hebben vestigingen door het hele land. Eerder boden zij 15% korting voor nieuwe gebruikers met de code <strong>VAIDELOCALIZA</strong>.</p>
+              </div>
+        
+              <div class="logistics-card transport-card">
+                <p class="transport-title">🚕 Taxi vanaf de luchthaven</p>
+                <p>Een taxi van luchthaven GRU naar Juquehy kost ongeveer <strong>R$775</strong> via <a href="https://guarucoop.com.br/en/booking" target="_blank" rel="noopener noreferrer">Guarucoop</a>.</p>
+              </div>
+        
+              <div class="logistics-card transport-card">
+                <p class="transport-title">📱 Uber</p>
+                <p>Uber is waarschijnlijk goedkoper, maar soms lastiger te regelen omdat chauffeurs niet altijd naar een andere stad willen rijden. Proberen kan altijd!</p>
+              </div>
+        
+              <div class="logistics-card transport-card">
+                <p class="transport-title">🚌 Bus</p>
+                <p>Er is een <a href="https://www.clickbus.com.br/onibus/guarulhos-sp-todos/sao-sebastiao-sp" target="_blank" rel="noopener noreferrer">bus van luchthaven GRU naar het centrum van São Sebastião</a>. Dit kan wat lastiger zijn als je geen Portugees spreekt. De bus rijdt langs Juquehy, maar stopt daar mogelijk niet, dus het is handig om dit met de chauffeur af te stemmen.</p>
+              </div>
+            </div>
+          </div>
+        
+          <hr class="logistics-divider">
+        
+          <div class="logistics-section" id="logistics-accommodation">
+            <div class="logistics-heading">
+              <span class="logistics-icon">🏨</span>
+              <h3>Accommodatie</h3>
+            </div>
+            <div class="logistics-card">
+              <p>Wij verblijven in het trouwweekend op de locatie samen met een deel van onze naaste familie en vrienden. In Juquehy zijn veel accommodaties beschikbaar, die je kunt vinden via onderstaande platforms of rechtstreeks via lokale hotels en pousadas.</p>
+              <div class="venue-links">
+                <a href="https://www.airbnb.com/s/Juquehy--S%C3%A3o-Sebasti%C3%A3o/homes" target="_blank" rel="noopener noreferrer" class="venue-link-btn">Airbnb</a>
+                <a href="https://www.booking.com/searchresults.html?ss=Juquehy" target="_blank" rel="noopener noreferrer" class="venue-link-btn">Booking.com</a>
+              </div>
+            </div>
+          </div>
+        `,
         nav_registry: "Cadeaulijst",
         registry_title: "Cadeaulijst",
         registry_text: "Hier kunnen later de links naar onze cadeaulijst komen wanneer alles klaar is."
