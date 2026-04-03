@@ -274,13 +274,22 @@ body {
 }
 
 .tab-panel p {
-  margin: 6px 0 0; 
-  max-width: 720px;
+  margin: 6px auto 0;
+  max-width: 620px;
   color: var(--text-soft);
   line-height: 1.9;
   font-size: 1.08rem;
   font-weight: 400;
+  text-align: center;
+}
+
+#logistics .tab-panel p,
+#party .tab-panel p,
+.logistics-card p,
+.transport-card p {
   text-align: left;
+  margin: 6px 0 0;
+  max-width: none;
 }
 
 .email-link {
