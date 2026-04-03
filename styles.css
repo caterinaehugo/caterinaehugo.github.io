@@ -447,15 +447,22 @@ body {
 }
 
 /* Registry section styles */
-.registry-qr-center {
-  text-align: center;
+.registry-text-body {
+  text-align: center !important;
+  max-width: 560px !important;
+  margin: 0 auto !important;
+  line-height: 1.9;
 }
 
-.registry-qr-center img {
-  width: 200px;
-  height: 200px;
-  border-radius: 12px;
-  border: 1px solid var(--line);
+.registry-text-body a {
+  color: var(--accent-deep);
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(110, 138, 134, 0.35);
+}
+
+.registry-text-body a:hover {
+  border-bottom-color: var(--accent-deep);
 }
 
 @media (max-width: 900px) {
