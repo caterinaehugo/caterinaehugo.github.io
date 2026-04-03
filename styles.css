@@ -447,17 +447,8 @@ body {
 }
 
 /* Registry section styles */
-.registry-pix-info {
-  text-align: center !important;
-  font-size: 1.05rem;
-  color: var(--text) !important;
-  margin: 0 auto 24px !important;
-  max-width: 560px;
-}
-
 .registry-qr-center {
   text-align: center;
-  margin-top: 8px;
 }
 
 .registry-qr-center img {
