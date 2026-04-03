@@ -446,6 +446,81 @@ body {
   margin-bottom: 8px !important;
 }
 
+/* Registry section styles */
+.registry-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.registry-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 28px 24px;
+  text-align: center;
+}
+
+.registry-emoji {
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+}
+
+.registry-card-title {
+  margin: 0 0 6px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.registry-card-desc {
+  font-size: 0.95rem;
+  color: var(--text-soft);
+  margin: 0 0 16px !important;
+  line-height: 1.5 !important;
+  text-align: center !important;
+}
+
+.registry-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+.registry-pix-btn,
+.registry-copy-btn {
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.82rem !important;
+  padding: 8px 14px !important;
+}
+
+.registry-qr {
+  display: none;
+  margin-top: 16px;
+  text-align: center;
+}
+
+.registry-qr-visible {
+  display: block;
+}
+
+.registry-qr img {
+  width: 180px;
+  height: 180px;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+}
+
+.registry-pix-key {
+  font-size: 0.85rem;
+  color: var(--text-soft);
+  margin-top: 8px !important;
+  font-weight: 600;
+  text-align: center !important;
+}
+
 @media (max-width: 900px) {
   .banner {
     height: 220px;
@@ -463,6 +538,10 @@ body {
 @media (max-width: 640px) {
   .banner {
     height: 180px;
+.registry-grid {
+    grid-template-columns: 1fr;
+  }
+    
   }
 
   .transport-grid {
