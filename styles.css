@@ -365,11 +365,11 @@ body {
 }
 
 .logistics-card {
-  background: var(--surface);
+  background: transparent;
   border: none;
   border-radius: 12px;
   padding: 24px 28px;
-  box-shadow: 0 2px 12px rgba(86, 112, 115, 0.06);
+  box-shadow: none;
 }
 
 .logistics-card p {
