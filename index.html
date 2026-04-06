@@ -61,6 +61,8 @@
         <button class="tab-link" data-tab="rsvp" data-i18n="nav_rsvp">RSVP</button>
         <button class="tab-link" data-tab="party" data-i18n="nav_party">Wedding Day</button>
         <button class="tab-link" data-tab="logistics" data-i18n="nav_logistics">Logistics</button>
+        <button class="tab-link" data-tab="qanda" data-i18n="nav_qanda">Q & A</button>
+        <button class="tab-link" data-tab="travel" data-i18n="nav_travel">Travel</button>
         <button class="tab-link" data-tab="registry" data-i18n="nav_registry">Registry</button>
       </nav>
     </header>
@@ -91,6 +93,20 @@
       <section id="logistics" class="tab-panel">
         <p data-i18n="logistics_text">
           Add answers here for how to get there, transportation, accommodation, dress code, children, etc.
+        </p>
+      </section>
+
+      <section id="qanda" class="tab-panel">
+        <h2 data-i18n="qanda_title">Q & A</h2>
+        <p data-i18n="qanda_text">
+          If you've got questions, friends and family, have a look at our Q & A first!
+        </p>
+      </section>
+
+      <section id="travel" class="tab-panel">
+        <h2 data-i18n="travel_title">Travel</h2>
+        <p data-i18n="travel_text">
+          Tips for exploring Brazil before or after the wedding.
         </p>
       </section>
 
@@ -242,7 +258,119 @@ rsvp_text: 'We would love to have you there! Please let us know by <strong>July 
  registry_text: `
           <p class="logistics-page-intro">Your presence at our wedding is the greatest gift we could ask for! If you'd like to help us start this new chapter together, a small contribution toward our future would be warmly appreciated.</p>
           <p class="registry-text-body">You can contribute in <strong>pounds</strong> via <a href="https://settleup.starlingbank.com/caterina-soto-vieira-hugo-reichardt-eb5b68" target="_blank" rel="noopener noreferrer">Starling Bank</a>, in <strong>euros</strong> via <a href="https://www.ing.nl/payreq/m/?trxid=TvxWegCkf6pFVfOXpY5sDqjVWPDyGHzl" target="_blank" rel="noopener noreferrer">ING payment request</a> or bank transfer (IBAN: NL58INGB0748715398), or in <strong>reais</strong> via PIX (chave: caterinaehugo@gmail.com).</p>
-        `,      },
+        `,
+        nav_qanda: "Q & A",
+        qanda_title: "Q & A",
+        qanda_text: `
+          <p class="logistics-page-intro">If you've got questions, friends and family, have a look at our Q & A first!</p>
+
+          <div class="qanda-item">
+            <h3 class="qanda-question">What's the RSVP deadline?</h3>
+            <p class="qanda-answer">Please RSVP by 15 April so we can get an accurate headcount.</p>
+          </div>
+
+          <div class="qanda-item">
+            <h3 class="qanda-question">Can I bring a plus one?</h3>
+            <p class="qanda-answer">Check your invitation to see if you've got a plus one!</p>
+          </div>
+
+          <div class="qanda-item">
+            <h3 class="qanda-question">Are children welcome?</h3>
+            <p class="qanda-answer">As much as we adore your little ones, we won't be including them in the ceremony or reception. However, we know some of you will be travelling with your children, so rest assured they're very welcome at the Friday cocktail reception and Sunday brunch! We'll also have a babysitting service available at the venue during the ceremony if you can't arrange other care. Please do get in touch if you have any questions!</p>
+          </div>
+
+          <div class="qanda-item">
+            <h3 class="qanda-question">What will the weather be like?</h3>
+            <p class="qanda-answer">September is the tail end of winter in Brazil, but Juquehy is on the coast and stays mild. Expect daytime temperatures around 22–26°C (72–79°F) with the occasional chance of rain. We recommend bringing a light layer for the evening and comfortable shoes — the venue has some outdoor grassy and sandy areas.</p>
+          </div>
+
+          <div class="qanda-item">
+            <h3 class="qanda-question">Do I need a visa to travel to Brazil?</h3>
+            <p class="qanda-answer">It depends on your nationality. EU citizens, UK nationals, and US citizens currently do not need a visa for tourist stays of up to 90 days. We recommend double-checking with your local Brazilian consulate or the official immigration website closer to the date, as requirements can change.</p>
+          </div>
+
+          <div class="qanda-item">
+            <h3 class="qanda-question">What currency is used in Brazil?</h3>
+            <p class="qanda-answer">The Brazilian Real (R$). Credit cards are widely accepted, but it's handy to carry some cash for smaller vendors and beach stalls. ATMs are available in São Sebastião town.</p>
+          </div>
+
+          <div class="qanda-item">
+            <h3 class="qanda-question">Is it safe to travel in Brazil?</h3>
+            <p class="qanda-answer">Juquehy is a quiet, family-friendly beach town and very safe. As with any travel, use common sense: don't flash valuables on the street and keep an eye on your belongings. We'll be happy to share more specific tips closer to the date!</p>
+          </div>
+
+          <div class="qanda-item">
+            <h3 class="qanda-question">Will there be vegetarian / vegan / allergy-friendly food?</h3>
+            <p class="qanda-answer">Absolutely! Please let us know about any dietary requirements when you RSVP and we'll make sure you're well looked after.</p>
+          </div>
+
+          <div class="qanda-item">
+            <h3 class="qanda-question">Can I take photos during the ceremony?</h3>
+            <p class="qanda-answer">We'd love for you to be fully present during the ceremony, so we kindly ask that you keep phones and cameras away. We'll have a professional photographer and will share all the photos with you afterwards!</p>
+          </div>
+        `,
+        nav_travel: "Travel",
+        travel_title: "Travel",
+        travel_text: `
+          <p class="logistics-page-intro">Since you're coming all the way to Brazil, why not make a holiday out of it? Here are some ideas depending on how much time you have.</p>
+
+          <div class="logistics-section">
+            <div class="logistics-heading">
+              <span class="logistics-icon">🗓️</span>
+              <h3>1 Week — The Highlights</h3>
+            </div>
+            <div class="logistics-card">
+              <p>With one week you can combine the wedding weekend with a taste of São Paulo or a few days relaxing on the coast.</p>
+              <div class="travel-itinerary">
+                <p><strong>Days 1–2: São Paulo</strong><br>Explore South America's largest city — world-class restaurants, street art in Vila Madalena, Ibirapuera Park, and vibrant nightlife. Don't miss the Pinacoteca museum and the Mercado Municipal.</p>
+                <p><strong>Days 3–5: Wedding weekend in Juquehy</strong><br>Enjoy the festivities and the beautiful beach town!</p>
+                <p><strong>Days 6–7: North coast beaches</strong><br>Explore nearby beaches like Camburi, Cambury, or Maresias — all within easy driving distance of Juquehy. Great for surfing, hiking, and laid-back beach vibes.</p>
+              </div>
+            </div>
+          </div>
+
+          <hr class="logistics-divider">
+
+          <div class="logistics-section">
+            <div class="logistics-heading">
+              <span class="logistics-icon">🗓️</span>
+              <h3>2 Weeks — Coast & Culture</h3>
+            </div>
+            <div class="logistics-card">
+              <p>Two weeks lets you explore beyond São Paulo and the coast. Add Rio de Janeiro or head to one of Brazil's stunning island destinations.</p>
+              <div class="travel-itinerary">
+                <p><strong>Days 1–3: São Paulo</strong><br>Take your time in the city — explore different neighbourhoods, try the local food scene (from Japanese in Liberdade to Italian in Bixiga), and visit the São Paulo Museum of Art (MASP).</p>
+                <p><strong>Days 4–6: Wedding weekend in Juquehy</strong><br>Celebrate with us!</p>
+                <p><strong>Days 7–8: Ilhabela</strong><br>A gorgeous island just a short ferry ride from São Sebastião. Lush Atlantic Forest, waterfalls, and beautiful beaches. Perfect for hiking and snorkelling.</p>
+                <p><strong>Days 9–12: Rio de Janeiro</strong><br>Christ the Redeemer, Sugarloaf Mountain, Copacabana, Ipanema, Santa Teresa neighbourhood, and incredible sunsets. Take the train through Tijuca Forest and explore Lapa for live samba.</p>
+                <p><strong>Days 13–14: Paraty or Ilha Grande</strong><br>Colonial charm and pristine beaches. Paraty is a UNESCO-listed town with cobblestone streets and cachaça distilleries. Ilha Grande is car-free and perfect for beach-hopping by boat.</p>
+              </div>
+            </div>
+          </div>
+
+          <hr class="logistics-divider">
+
+          <div class="logistics-section">
+            <div class="logistics-heading">
+              <span class="logistics-icon">🗓️</span>
+              <h3>3 Weeks — The Full Adventure</h3>
+            </div>
+            <div class="logistics-card">
+              <p>Three weeks gives you time to see a completely different side of Brazil. Consider heading north to tropical beaches, or inland to experience the natural wonders.</p>
+              <div class="travel-itinerary">
+                <p><strong>Week 1: São Paulo + Wedding + Coast</strong><br>Follow the 1-week itinerary above.</p>
+                <p><strong>Week 2: Rio de Janeiro + surrounds</strong><br>Spend more time in Rio, plus day trips to Niterói (the Oscar Niemeyer museum has stunning views), Petrópolis (the imperial mountain town), or Búzios (a chic beach peninsula).</p>
+                <p><strong>Week 3: Choose your adventure!</strong></p>
+                <div class="travel-options">
+                  <p><strong>🏖️ Bahia (Salvador + Chapada Diamantina)</strong><br>Afro-Brazilian culture, colourful colonial architecture, incredible street food, capoeira, and some of the best beaches in the country. Fly from Rio to Salvador. If you like hiking, add Chapada Diamantina — a breathtaking national park with canyons, caves, and waterfalls.</p>
+                  <p><strong>🌊 Northeast coast (Jericoacoara or Fernando de Noronha)</strong><br>Jericoacoara is a remote, windswept paradise famous for sand dunes and kite surfing. Fernando de Noronha is a volcanic archipelago with crystal-clear waters — one of the best diving spots in the world (book well in advance, visitor numbers are limited).</p>
+                  <p><strong>🌿 Iguazu Falls + Pantanal</strong><br>Fly to Foz do Iguaçu for one of the world's most spectacular waterfalls (visit both the Brazilian and Argentine sides!). Then head to the Pantanal — the world's largest tropical wetland — for incredible wildlife spotting: jaguars, caimans, capybaras, toucans, and macaws.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        `,
+      },
       nl: {
         names: "Hugo & Caterina",
         date: "12 september 2026",
@@ -354,7 +482,14 @@ rsvp_text: 'We zouden het geweldig vinden als jullie erbij zijn! Laat ons vóór
         registry_text: `
           <p class="logistics-page-intro">Jullie aanwezigheid op onze bruiloft is het mooiste cadeau dat we ons kunnen wensen! Als je graag iets wilt bijdragen aan ons nieuwe avontuur samen, dan wordt elke bijdrage enorm gewaardeerd.</p>
           <p class="registry-text-body">Je kunt bijdragen in <strong>euro's</strong> via een <a href="https://www.ing.nl/payreq/m/?trxid=TvxWegCkf6pFVfOXpY5sDqjVWPDyGHzl" target="_blank" rel="noopener noreferrer">ING betaalverzoek</a> of overschrijving (IBAN: NL58INGB0748715398), in <strong>ponden</strong> via <a href="https://settleup.starlingbank.com/caterina-soto-vieira-hugo-reichardt-eb5b68" target="_blank" rel="noopener noreferrer">Starling Bank</a>, of in <strong>reais</strong> via PIX (chave: caterinaehugo@gmail.com).</p>
-        `,      },
+        `,
+        nav_qanda: "Q & A",
+        qanda_title: "Q & A",
+        qanda_text: `<p class="logistics-page-intro">Binnenkort beschikbaar in het Nederlands.</p>`,
+        nav_travel: "Reistips",
+        travel_title: "Reistips",
+        travel_text: `<p class="logistics-page-intro">Binnenkort beschikbaar in het Nederlands.</p>`,
+      },
       "pt-br": {
         names: "Hugo & Caterina",
         date: "12 de setembro de 2026",
@@ -467,7 +602,14 @@ rsvp_text: 'We zouden het geweldig vinden als jullie erbij zijn! Laat ons vóór
         registry_text: `
           <p class="logistics-page-intro">A presença de vocês no nosso casamento é o maior presente que poderíamos pedir! Se quiserem nos ajudar a começar esse novo capítulo juntos, qualquer contribuição será recebida com muito carinho.</p>
           <p class="registry-text-body">Vocês podem contribuir em <strong>reais</strong> via PIX (chave: caterinaehugo@gmail.com), em <strong>euros</strong> pelo <a href="https://www.ing.nl/payreq/m/?trxid=TvxWegCkf6pFVfOXpY5sDqjVWPDyGHzl" target="_blank" rel="noopener noreferrer">ING</a> ou transferência bancária (IBAN: NL58INGB0748715398), ou em <strong>libras</strong> via <a href="https://settleup.starlingbank.com/caterina-soto-vieira-hugo-reichardt-eb5b68" target="_blank" rel="noopener noreferrer">Starling Bank</a>.</p>
-        `,      }
+        `,
+        nav_qanda: "Perguntas",
+        qanda_title: "Perguntas",
+        qanda_text: `<p class="logistics-page-intro">Em breve disponível em português.</p>`,
+        nav_travel: "Viagem",
+        travel_title: "Viagem",
+        travel_text: `<p class="logistics-page-intro">Em breve disponível em português.</p>`,
+      }
     };
 
     const langButtons = document.querySelectorAll(".lang-btn");
@@ -512,7 +654,7 @@ rsvp_text: 'We zouden het geweldig vinden als jullie erbij zijn! Laat ons vóór
         if (key === "countdown") return;
 
         if (translations[lang] && translations[lang][key]) {
-          if (key === "rsvp_text" || key === "logistics_text" || key === "party_text" || key === "registry_text" ) {
+          if (key === "rsvp_text" || key === "logistics_text" || key === "party_text" || key === "registry_text" || key === "qanda_text" || key === "travel_text") {
             el.innerHTML = translations[lang][key];
           } else {
             el.textContent = translations[lang][key];
