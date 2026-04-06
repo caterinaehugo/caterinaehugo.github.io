@@ -7,8 +7,8 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -68,7 +68,7 @@
     <main class="content">
       <section id="home" class="tab-panel active">
         <p data-i18n="home_text">
-          We’re so excited to celebrate with you. This website will have everything
+        We’re so excited to celebrate with you. This website will have everything
         you need for the big day, including travel info, schedule details, and more.
         </p>
       </section>
@@ -125,55 +125,124 @@
         location: "Juquehy, São Sebastião - SP, Brazil",
         nav_home: "Home",
         home_title: "Welcome",
-        home_text: "We’re so excited to celebrate with you. This website will have everything you need for the big day, including travel info, schedule details, and more.",
-        nav_rsvp: "RSVP",
-        rsvp_text: 'Please let us know by <strong>July 12, 2026</strong> whether you’ll be able to join us, and how many guests will be coming with you. You can send your RSVP to <a href="mailto:caterinaehugo@gmail.com" class="email-link">caterinaehugo@gmail.com</a>. We’re so excited to celebrate together.',
+home_text: "We're so excited to celebrate with you! Here you should find verything about our wedding: the schedule, logistics, and all the little details to help you join us in Brazil for a celebration we'll never forget.",        nav_rsvp: "RSVP",
+rsvp_text: 'We would love to have you there! Please let us know by <strong>July 12, 2026</strong> if you can make it and how many guests will be joining. Send your RSVP to <a href="mailto:caterinaehugo@gmail.com" class="email-link">caterinaehugo@gmail.com</a>. Please include if you have any allergies in the email.',        
         nav_party: "Wedding Day",
         party_title: "Wedding Day",
-        party_text: "Meet the people standing by our side on our special day.",
+        party_text: `
+          <div class="logistics-section" id="party-venue">
+            <div class="logistics-heading">
+              <span class="logistics-icon">📍</span>
+              <h3>Venue</h3>
+            </div>
+            <div class="logistics-card">
+              <p>The ceremony, reception and party will all take place at <strong>Vila Rudá</strong>.</p>
+              <p class="venue-address">Rua Claudio Isidoro Espirito Santo, 818<br>Juquehy, São Sebastião - SP, 11600-000</p>
+              <div class="venue-links">
+                <a href="https://maps.app.goo.gl/2MesBx7myK8R6cSw9" target="_blank" rel="noopener noreferrer" class="venue-link-btn">📌 Open in Google Maps</a>
+                <a href="https://www.vilaruda.com.br/contato" target="_blank" rel="noopener noreferrer" class="venue-link-btn">🌐 Venue website</a>
+              </div>
+            </div>
+          </div>
+
+          <hr class="logistics-divider">
+
+          <div class="logistics-section" id="party-schedule">
+            <div class="logistics-heading">
+              <span class="logistics-icon">🕒</span>
+              <h3>Schedule</h3>
+            </div>
+            <div class="logistics-card">
+              <p><strong>3:30–4:00 pm</strong><br>🥂 Welcome drinks</p>
+              <p><strong>4:00–5:00 pm</strong><br>👰🤵 Ceremony</p>
+              <p><strong>5:00–6:00 pm</strong><br>🍰 Reception</p>
+              <p><strong>From 6:00 pm onward</strong><br>💃 Food and party</p>
+            </div>
+          </div>
+        
+          <hr class="logistics-divider">
+        
+          <div class="logistics-section" id="party-dress-code">
+            <div class="logistics-heading">
+              <span class="logistics-icon">👗</span>
+              <h3>Dress code</h3>
+            </div>
+            <div class="logistics-card">
+              <p>The dress code is <strong>cocktail / semi-formal</strong>. Here's what that typically means depending on where you're from:</p>
+              <div class="dress-code-grid">
+                <div class="dress-code-item">
+                  <p class="dress-code-culture">🇬🇧 UK — Cocktail Attire</p>
+                  <p>A midi or knee-length dress, or a suit with or without a tie.</p>
+                </div>
+                <div class="dress-code-item">
+                  <p class="dress-code-culture">🇳🇱 Netherlands — Feestelijke Kleding</p>
+                  <p>A stylish dress or a neat suit. Dutch semi-formal leans slightly more relaxed, but keep it polished!</p>
+                </div>
+                <div class="dress-code-item">
+                  <p class="dress-code-culture">🇧🇷 Brazil — Esporte Fino</p>
+                  <p>For women, a cocktail dress or elegant jumpsuit; for men, dress pants with a blazer (tie optional).</p>
+                </div>
+                <div class="dress-code-item">
+                  <p class="dress-code-culture">🇺🇸 US — Cocktail / Semi-Formal</p>
+                  <p>A classic cocktail dress for women, a dark suit for men. No need for a full tuxedo or floor-length gown.</p>
+                </div>
+              </div>
+              <p style="margin-top: 16px;">When in doubt: dress up a little! It's a beach town, but it's still a wedding. Comfortable shoes are a plus — the venue has some grassy and sandy areas.</p>
+            </div>
+          </div>
+        `,
         nav_logistics: "Logistics",
         logistics_title: "Logistics",
         logistics_text: `
-          <p><strong>Wedding venue</strong><br>
-          Vila Rudá<br>
-          Rua Claudio Isidoro Espirito Santo, 818 - Juquehy, São Sebastião - SP, 11600-000<br>
-          <a href="https://maps.app.goo.gl/2MesBx7myK8R6cSw9" target="_blank" rel="noopener noreferrer">Open in Google Maps</a> ·
-          <a href="https://www.vilaruda.com.br/contato" target="_blank" rel="noopener noreferrer">Venue website</a>
-          </p>
-        
-          <p><strong>How to get there</strong><br>
-          The easiest way to get to the venue is by car. Depending on where you are coming from, there may also be transfers or public transportation available to São Sebastião or Juquehy. For those travelling from abroad, we recommend flying to São Paulo (Aeroporto de Guarulhos), which is about 2.5 hours by car from the wedding venue.
-          </p>
-        
-          <p><strong>Some useful links</strong></p>
-        
-          <p>
-          <a href="https://www.localiza.com/others/en-us" target="_blank" rel="noopener noreferrer">Localiza rental car website</a><br>
-          We recommend this company because they are easy to deal with and have locations across the whole country. They have previously offered a 15% discount for first-time users with the code <strong>VAIDELOCALIZA</strong>.
-          </p>
-        
-          <p>
-          <a href="https://guarucoop.com.br/en/booking" target="_blank" rel="noopener noreferrer">Guarucoop airport taxi</a><br>
-          A taxi from GRU airport to Juquehy beach costs around <strong>R$775</strong> with Guarucoop.
-          </p>
-        
-          <p>
-          Uber is likely cheaper, but can be harder to arrange because drivers often do not want to drive to another city. It does not hurt trying!
-          </p>
-        
-          <p>
-          <a href="https://www.clickbus.com.br/onibus/guarulhos-sp-todos/sao-sebastiao-sp" target="_blank" rel="noopener noreferrer">Bus from GRU airport to São Sebastião</a><br>
-          There is a bus from GRU airport to São Sebastião city center. This may be a harder option if you do not speak Portuguese. While the bus passes the wedding venue in Juquehy, it is not certain that it will stop in town, so some coordination with the bus driver may be needed.
-          </p>
-        
-          <p><strong>Accommodation</strong><br>
-          We will stay at the wedding venue during the weekend with some of our closest friends and family. Juquehy has many accommodation options that you can find either on Airbnb, Booking.com, or directly through hotel and guesthouse websites.
-          </p>
+<p class="logistics-page-intro">We can't wait to have you in Juquehy! Here's everything you need to plan your trip: <a href="#logistics-getting-there" class="logistics-anchor">getting there</a> and <a href="#logistics-accommodation" class="logistics-anchor">accommodation</a>.</p>
+
+           <div class="logistics-section" id="logistics-getting-there">
+            <div class="logistics-heading">
+              <span class="logistics-icon">✈️</span>
+              <h3>Getting There</h3>
+            </div>
+            <div class="logistics-card logistics-intro-card">
+<p>The easiest way to reach us is by car — and the drive along the coast is gorgeous! For those travelling from abroad, we recommend flying to <strong>São Paulo (Aeroporto de Guarulhos)</strong>, which is about 2.5 hours by car from the venue.</p>            </div>
+
+            <div class="transport-grid">
+              <div class="logistics-card transport-card">
+                <p class="transport-title">🚗 Car Rental</p>
+                <p>We recommend <a href="https://www.localiza.com/others/en-us" target="_blank" rel="noopener noreferrer">Localiza</a> — they are easy to deal with and have locations across the whole country. They have previously offered a 15% discount for first-time users with the code <strong>VAIDELOCALIZA</strong>.</p>
+              </div>
+
+              <div class="logistics-card transport-card">
+                <p class="transport-title">🚕 Airport Taxi</p>
+                <p>A taxi from GRU airport to Juquehy costs around <strong>R$775</strong> with <a href="https://guarucoop.com.br/en/booking" target="_blank" rel="noopener noreferrer">Guarucoop</a>.</p>
+              </div>
+
+              <div class="logistics-card transport-card">
+                <p class="transport-title">🚌 Bus</p>
+                <p>There is a <a href="https://www.clickbus.com.br/onibus/guarulhos-sp-todos/sao-sebastiao-sp" target="_blank" rel="noopener noreferrer">bus from GRU airport to São Sebastião</a> city center. This may be harder if you do not speak Portuguese, but it is a great budget option! The bus passes Juquehy but may not stop there, so some coordination with the driver is recommended.</p>
+              </div>
+            </div>
+          </div>
+
+          <hr class="logistics-divider">
+
+          <div class="logistics-section" id="logistics-accommodation">
+            <div class="logistics-heading">
+              <span class="logistics-icon">🏨</span>
+              <h3>Accommodation</h3>
+            </div>
+            <div class="logistics-card">
+<p>We'll be staying at the venue over the weekend with some of our closest friends and family. Juquehy is a lovely beach town with plenty of places to stay — have a look at the options below, or search for local hotels and guesthouses (called <em>pousadas</em>)!</p>              <div class="venue-links">
+                <a href="https://www.airbnb.com/s/Juquehy--S%C3%A3o-Sebasti%C3%A3o/homes" target="_blank" rel="noopener noreferrer" class="venue-link-btn">Airbnb</a>
+                <a href="https://www.booking.com/searchresults.html?ss=Juquehy" target="_blank" rel="noopener noreferrer" class="venue-link-btn">Booking.com</a>
+              </div>
+            </div>
+          </div>
         `,
         nav_registry: "Registry",
         registry_title: "Registry",
-        registry_text: "Your registry links can go here when you’re ready."
-      },
+ registry_text: `
+          <p class="logistics-page-intro">Your presence at our wedding is the greatest gift we could ask for! If you'd like to help us start this new chapter together, a small contribution toward our future would be warmly appreciated.</p>
+          <p class="registry-text-body">You can contribute in <strong>pounds</strong> via <a href="https://settleup.starlingbank.com/caterina-soto-vieira-hugo-reichardt-eb5b68" target="_blank" rel="noopener noreferrer">Starling Bank</a>, in <strong>euros</strong> via <a href="https://www.ing.nl/payreq/m/?trxid=TvxWegCkf6pFVfOXpY5sDqjVWPDyGHzl" target="_blank" rel="noopener noreferrer">ING payment request</a> or bank transfer (IBAN: NL58INGB0748715398), or in <strong>reais</strong> via PIX (chave: caterinaehugo@gmail.com).</p>
+        `,      },
       nl: {
         names: "Hugo & Caterina",
         date: "12 september 2026",
@@ -182,17 +251,110 @@
         home_title: "Welkom",
         home_text: "We vinden het ontzettend fijn om deze bijzondere dag met jullie te vieren. Op deze website vind je alle informatie die je nodig hebt voor onze grote dag, zoals reisinfo, praktische details en meer.",
         nav_rsvp: "RSVP",
-        rsvp_text: 'Laat ons alsjeblieft vóór <strong>12 juli 2026</strong> weten of jullie erbij kunnen zijn, en met hoeveel gasten jullie komen. Jullie kunnen jullie RSVP sturen naar <a href="mailto:caterinaehugo@gmail.com" class="email-link">caterinaehugo@gmail.com</a>. We kijken er enorm naar uit om dit samen te vieren.',
-        nav_party: "Trouwdag",
+rsvp_text: 'We zouden het geweldig vinden als jullie erbij zijn! Laat ons vóór <strong>12 juli 2026</strong> weten of jullie kunnen komen en met hoeveel jullie zijn. Stuur je RSVP naar <a href="mailto:caterinaehugo@gmail.com" class="email-link">caterinaehugo@gmail.com</a> — we kunnen niet wachten!',        nav_party: "Trouwdag",
         party_title: "Trouwdag",
-        party_text: "Maak kennis met de mensen die op onze speciale dag aan onze zijde staan.",
+        party_text: `
+          <div class="logistics-section" id="party-venue">
+            <div class="logistics-heading">
+              <span class="logistics-icon">📍</span>
+              <h3>Locatie</h3>
+            </div>
+            <div class="logistics-card">
+              <p>De ceremonie, receptie en het feest vinden allemaal plaats bij <strong>Vila Rudá</strong> — alles op één prachtige plek!</p>
+              <p class="venue-address">Rua Claudio Isidoro Espirito Santo, 818<br>Juquehy, São Sebastião - SP, 11600-000</p>
+              <div class="venue-links">
+                <a href="https://maps.app.goo.gl/2MesBx7myK8R6cSw9" target="_blank" rel="noopener noreferrer" class="venue-link-btn">📌 Open in Google Maps</a>
+                <a href="https://www.vilaruda.com.br/contato" target="_blank" rel="noopener noreferrer" class="venue-link-btn">🌐 Website van de locatie</a>
+              </div>
+            </div>
+          </div>
+
+          <hr class="logistics-divider">
+
+          <div class="logistics-section" id="party-schedule">
+            <div class="logistics-heading">
+              <span class="logistics-icon">🕒</span>
+              <h3>Programma</h3>
+            </div>
+            <div class="logistics-card">
+              <p><strong>15:30–16:00</strong><br>🥂 Welkomstdrankjes</p>
+              <p><strong>16:00–17:00</strong><br>👰🤵 Ceremonie</p>
+              <p><strong>17:00–18:00</strong><br>🍰 Receptie</p>
+              <p><strong>Vanaf 18:00</strong><br>💃 Eten en feest</p>
+            </div>
+          </div>
+        
+          <hr class="logistics-divider">
+        
+          <div class="logistics-section" id="party-dress-code">
+            <div class="logistics-heading">
+              <span class="logistics-icon">👗</span>
+              <h3>Dresscode</h3>
+            </div>
+            <div class="logistics-card">
+              <p>Trek aan waar je je lekker in voelt! Er is geen strenge dresscode — kom gewoon klaar om te feesten.</p>
+            </div>
+          </div>
+        `,
         nav_logistics: "Praktische info",
         logistics_title: "Praktische info",
-        logistics_text: "Hier komt informatie over hoe je er komt, vervoer, accommodatie, dresscode, kinderen, enzovoort.",
+        logistics_text: `
+          <p class="logistics-page-intro">We kunnen niet wachten om jullie in Juquehy te verwelkomen! Hier vind je alles om je reis te plannen: <a href="#logistics-getting-there" class="logistics-anchor">hoe er te komen</a> en <a href="#logistics-accommodation" class="logistics-anchor">accommodatie</a>.</p>
+                
+          <div class="logistics-section" id="logistics-getting-there">
+            <div class="logistics-heading">
+              <span class="logistics-icon">✈️</span>
+              <h3>Hoe kom je er?</h3>
+            </div>
+            <div class="logistics-card logistics-intro-card">
+              <p>De makkelijkste manier om de locatie te bereiken is met de auto. Voor gasten die uit het buitenland komen, raden we aan om naar <strong>São Paulo (Aeroporto de Guarulhos)</strong> te vliegen. Vanaf daar is het ongeveer 2,5 uur rijden naar de trouwlocatie.</p>
+            </div>
+        
+            <div class="transport-grid">
+              <div class="logistics-card transport-card">
+                <p class="transport-title">🚗 Auto huren</p>
+                <p>We raden <a href="https://www.localiza.com/others/en-us" target="_blank" rel="noopener noreferrer">Localiza</a> aan — zij zijn prettig in gebruik en hebben vestigingen door het hele land. Eerder boden zij 15% korting voor nieuwe gebruikers met de code <strong>VAIDELOCALIZA</strong>.</p>
+              </div>
+        
+              <div class="logistics-card transport-card">
+                <p class="transport-title">🚕 Taxi vanaf de luchthaven</p>
+                <p>Een taxi van luchthaven GRU naar Juquehy kost ongeveer <strong>R$775</strong> via <a href="https://guarucoop.com.br/en/booking" target="_blank" rel="noopener noreferrer">Guarucoop</a>.</p>
+              </div>
+        
+              <div class="logistics-card transport-card">
+                <p class="transport-title">📱 Uber</p>
+                <p>Uber is waarschijnlijk goedkoper, maar soms lastiger te regelen omdat chauffeurs niet altijd naar een andere stad willen rijden. Proberen kan altijd!</p>
+              </div>
+        
+              <div class="logistics-card transport-card">
+                <p class="transport-title">🚌 Bus</p>
+                <p>Er is een <a href="https://www.clickbus.com.br/onibus/guarulhos-sp-todos/sao-sebastiao-sp" target="_blank" rel="noopener noreferrer">bus van luchthaven GRU naar het centrum van São Sebastião</a>. Dit kan wat lastiger zijn als je geen Portugees spreekt. De bus rijdt langs Juquehy, maar stopt daar mogelijk niet, dus het is handig om dit met de chauffeur af te stemmen.</p>
+              </div>
+            </div>
+          </div>
+        
+          <hr class="logistics-divider">
+        
+          <div class="logistics-section" id="logistics-accommodation">
+            <div class="logistics-heading">
+              <span class="logistics-icon">🏨</span>
+              <h3>Accommodatie</h3>
+            </div>
+            <div class="logistics-card">
+              <p>Wij verblijven in het trouwweekend op de locatie samen met een deel van onze naaste familie en vrienden. In Juquehy zijn veel accommodaties beschikbaar, die je kunt vinden via onderstaande platforms of rechtstreeks via lokale hotels en pousadas.</p>
+              <div class="venue-links">
+                <a href="https://www.airbnb.com/s/Juquehy--S%C3%A3o-Sebasti%C3%A3o/homes" target="_blank" rel="noopener noreferrer" class="venue-link-btn">Airbnb</a>
+                <a href="https://www.booking.com/searchresults.html?ss=Juquehy" target="_blank" rel="noopener noreferrer" class="venue-link-btn">Booking.com</a>
+              </div>
+            </div>
+          </div>
+        `,
         nav_registry: "Cadeaulijst",
         registry_title: "Cadeaulijst",
-        registry_text: "Hier kunnen later de links naar onze cadeaulijst komen wanneer alles klaar is."
-      },
+        registry_text: `
+          <p class="logistics-page-intro">Jullie aanwezigheid op onze bruiloft is het mooiste cadeau dat we ons kunnen wensen! Als je graag iets wilt bijdragen aan ons nieuwe avontuur samen, dan wordt elke bijdrage enorm gewaardeerd.</p>
+          <p class="registry-text-body">Je kunt bijdragen in <strong>euro's</strong> via een <a href="https://www.ing.nl/payreq/m/?trxid=TvxWegCkf6pFVfOXpY5sDqjVWPDyGHzl" target="_blank" rel="noopener noreferrer">ING betaalverzoek</a> of overschrijving (IBAN: NL58INGB0748715398), in <strong>ponden</strong> via <a href="https://settleup.starlingbank.com/caterina-soto-vieira-hugo-reichardt-eb5b68" target="_blank" rel="noopener noreferrer">Starling Bank</a>, of in <strong>reais</strong> via PIX (chave: caterinaehugo@gmail.com).</p>
+        `,      },
       "pt-br": {
         names: "Hugo & Caterina",
         date: "12 de setembro de 2026",
@@ -204,14 +366,108 @@
         rsvp_text: 'Pedimos, por favor, que nos avisem até <strong>12 de julho de 2026</strong> se poderão vir e com quantos convidados estarão presentes. Vocês podem enviar a confirmação para <a href="mailto:caterinaehugo@gmail.com" class="email-link">caterinaehugo@gmail.com</a>. Estamos muito felizes para celebrar juntos.',
         nav_party: "Dia do Casamento",
         party_title: "Dia do Casamento",
-        party_text: "Conheça as pessoas que estarão ao nosso lado nesse dia tão especial.",
+        party_text: `
+          <div class="logistics-section" id="party-venue">
+            <div class="logistics-heading">
+              <span class="logistics-icon">📍</span>
+              <h3>Local</h3>
+            </div>
+            <div class="logistics-card">
+              <p>A cerimônia, recepção e festa acontecerão na <strong>Vila Rudá</strong> — tudo no mesmo lugar!</p>
+              <p class="venue-address">Rua Claudio Isidoro Espirito Santo, 818<br>Juquehy, São Sebastião - SP, 11600-000</p>
+              <div class="venue-links">
+                <a href="https://maps.app.goo.gl/2MesBx7myK8R6cSw9" target="_blank" rel="noopener noreferrer" class="venue-link-btn">📌 Abrir no Google Maps</a>
+                <a href="https://www.vilaruda.com.br/contato" target="_blank" rel="noopener noreferrer" class="venue-link-btn">🌐 Site do local</a>
+              </div>
+            </div>
+          </div>
+
+          <hr class="logistics-divider">
+
+          <div class="logistics-section" id="party-schedule">
+            <div class="logistics-heading">
+              <span class="logistics-icon">🕒</span>
+              <h3>Programação</h3>
+            </div>
+            <div class="logistics-card">
+              <p><strong>15:30–16:00</strong><br>🥂 Drinks de boas-vindas</p>
+              <p><strong>16:00–17:00</strong><br>👰🤵 Cerimônia</p>
+              <p><strong>17:00–18:00</strong><br>🍰 Recepção</p>
+              <p><strong>A partir das 18:00</strong><br>💃 Comida e festa</p>
+            </div>
+          </div>
+        
+          <hr class="logistics-divider">
+        
+          <div class="logistics-section" id="party-dress-code">
+            <div class="logistics-heading">
+              <span class="logistics-icon">👗</span>
+              <h3>Traje</h3>
+            </div>
+            <div class="logistics-card">
+              <p>Vista o que te faz sentir bem! Não temos dresscode — venha pronto(a) para celebrar.</p>
+            </div>
+          </div>
+        `,
         nav_logistics: "Logística",
         logistics_title: "Logística",
-        logistics_text: "Aqui vocês encontrarão informações sobre como chegar, transporte, hospedagem, traje, crianças, etc.",
+        logistics_text: `
+         <p class="logistics-page-intro">Mal podemos esperar para receber vocês em Juquehy! Aqui está tudo para planejar a viagem: <a href="#logistics-getting-there" class="logistics-anchor">como chegar</a> e <a href="#logistics-accommodation" class="logistics-anchor">hospedagem</a>.</p>
+                
+          <div class="logistics-section" id="logistics-getting-there">
+            <div class="logistics-heading">
+              <span class="logistics-icon">✈️</span>
+              <h3>Como chegar</h3>
+            </div>
+            <div class="logistics-card logistics-intro-card">
+              <p>A forma mais fácil de chegar ao local é de carro. Para quem vem do exterior, recomendamos voar para <strong>São Paulo (Aeroporto de Guarulhos)</strong>, que fica a cerca de 2,5 horas de carro do local do casamento.</p>
+            </div>
+        
+            <div class="transport-grid">
+              <div class="logistics-card transport-card">
+                <p class="transport-title">🚗 Aluguel de carro</p>
+                <p>Recomendamos a <a href="https://www.localiza.com/others/en-us" target="_blank" rel="noopener noreferrer">Localiza</a> — é prática de usar e tem unidades em todo o país. Eles já ofereceram 15% de desconto para novos usuários com o código <strong>VAIDELOCALIZA</strong>.</p>
+              </div>
+        
+              <div class="logistics-card transport-card">
+                <p class="transport-title">🚕 Táxi do aeroporto</p>
+                <p>Um táxi do aeroporto de GRU até Juquehy custa em torno de <strong>R$775</strong> com a <a href="https://guarucoop.com.br/en/booking" target="_blank" rel="noopener noreferrer">Guarucoop</a>.</p>
+              </div>
+        
+              <div class="logistics-card transport-card">
+                <p class="transport-title">📱 Uber</p>
+                <p>O Uber provavelmente sai mais barato, mas pode ser mais difícil de conseguir porque muitos motoristas não gostam de fazer viagens para outra cidade. Ainda assim, vale a pena tentar!</p>
+              </div>
+        
+              <div class="logistics-card transport-card">
+                <p class="transport-title">🚌 Ônibus</p>
+                <p>Há um <a href="https://www.clickbus.com.br/onibus/guarulhos-sp-todos/sao-sebastiao-sp" target="_blank" rel="noopener noreferrer">ônibus do aeroporto de GRU para o centro de São Sebastião</a>. Isso pode ser um pouco mais difícil para quem não fala português. O ônibus passa por Juquehy, mas pode não parar lá, então recomendamos combinar isso com o motorista.</p>
+              </div>
+            </div>
+          </div>
+        
+          <hr class="logistics-divider">
+        
+          <div class="logistics-section" id="logistics-accommodation">
+            <div class="logistics-heading">
+              <span class="logistics-icon">🏨</span>
+              <h3>Hospedagem</h3>
+            </div>
+            <div class="logistics-card">
+              <p>Vamos ficar no local do casamento durante o fim de semana com alguns de nossos amigos e familiares mais próximos. Juquehy tem várias opções de hospedagem, que vocês podem encontrar nas plataformas abaixo ou diretamente nos sites de hotéis e pousadas da região.</p>
+              <div class="venue-links">
+                <a href="https://www.airbnb.com/s/Juquehy--S%C3%A3o-Sebasti%C3%A3o/homes" target="_blank" rel="noopener noreferrer" class="venue-link-btn">Airbnb</a>
+                <a href="https://www.booking.com/searchresults.html?ss=Juquehy" target="_blank" rel="noopener noreferrer" class="venue-link-btn">Booking.com</a>
+              </div>
+            </div>
+          </div>
+        `,
         nav_registry: "Lista de Presentes",
         registry_title: "Lista de Presentes",
-        registry_text: "Os links da nossa lista de presentes poderão ser colocados aqui quando estiver tudo pronto."
-      }
+        registry_text: `
+          <p class="logistics-page-intro">A presença de vocês no nosso casamento é o maior presente que poderíamos pedir! Se quiserem nos ajudar a começar esse novo capítulo juntos, qualquer contribuição será recebida com muito carinho.</p>
+          <p class="registry-text-body">Vocês podem contribuir em <strong>reais</strong> via PIX (chave: caterinaehugo@gmail.com), em <strong>euros</strong> pelo <a href="https://www.ing.nl/payreq/m/?trxid=TvxWegCkf6pFVfOXpY5sDqjVWPDyGHzl" target="_blank" rel="noopener noreferrer">ING</a> ou transferência bancária (IBAN: NL58INGB0748715398), ou em <strong>libras</strong> via <a href="https://settleup.starlingbank.com/caterina-soto-vieira-hugo-reichardt-eb5b68" target="_blank" rel="noopener noreferrer">Starling Bank</a>.</p>
+        `,      }
     };
 
     const langButtons = document.querySelectorAll(".lang-btn");
@@ -256,7 +512,7 @@
         if (key === "countdown") return;
 
         if (translations[lang] && translations[lang][key]) {
-          if (key === "rsvp_text" || key === "logistics_text" ) {
+          if (key === "rsvp_text" || key === "logistics_text" || key === "party_text" || key === "registry_text" ) {
             el.innerHTML = translations[lang][key];
           } else {
             el.textContent = translations[lang][key];

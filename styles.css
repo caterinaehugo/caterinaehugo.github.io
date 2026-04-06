@@ -22,7 +22,7 @@ html, body {
 body {
   background: linear-gradient(to bottom, #f3f1eb 0%, #f8f5f0 100%);
   color: var(--text);
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
 .page {
@@ -85,7 +85,7 @@ body {
   border: 1px solid rgba(110, 138, 134, 0.14);
   background: rgba(255, 255, 255, 0.78);
   color: var(--text);
-  font-family: "Nunito", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 0.95rem;
   font-weight: 700;
   padding: 10px 16px;
@@ -136,8 +136,8 @@ body {
   margin: 0;
   font-family: inherit;
   font-size: clamp(2.7rem, 5vw, 4.8rem);
-  font-weight: 600;
-  letter-spacing: -0.02em;
+  font-weight: 300;
+  letter-spacing: 0.02em;
   color: var(--text);
   line-height: 1.05;
 }
@@ -274,13 +274,22 @@ body {
 }
 
 .tab-panel p {
-  margin: 6px 0 0; 
-  max-width: 720px;
+  margin: 6px auto 0;
+  max-width: 620px;
   color: var(--text-soft);
   line-height: 1.9;
   font-size: 1.08rem;
   font-weight: 400;
+  text-align: center;
+}
+
+#logistics .tab-panel p,
+#party .tab-panel p,
+.logistics-card p,
+.transport-card p {
   text-align: left;
+  margin: 6px 0 0;
+  max-width: none;
 }
 
 .email-link {
@@ -292,6 +301,170 @@ body {
 
 .email-link:hover {
   text-decoration: none;
+  border-bottom-color: var(--accent-deep);
+}
+
+/* Logistics section styles */
+.logistics-page-intro {
+  text-align: center;
+  font-size: 1.08rem;
+  color: var(--text-soft);
+  margin: 0 auto 72px !important;
+  max-width: 560px;
+  line-height: 1.8;
+}
+
+.logistics-anchor {
+  color: var(--accent-deep);
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(110, 138, 134, 0.35);
+}
+
+.logistics-anchor:hover {
+  border-bottom-color: var(--accent-deep);
+}
+
+.logistics-section {
+  margin-bottom: 0;
+}
+
+.logistics-divider {
+  border: none;
+  border-top: 1px solid var(--line);
+  margin: 40px 0;
+}
+
+.logistics-heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+  padding-left: 0;
+  border-left: none;
+}
+
+.logistics-heading h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--text);
+  letter-spacing: 0.02em;
+}
+
+.logistics-icon {
+  font-size: 1.4rem;
+  line-height: 1;
+}
+
+.logistics-intro-card {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  margin-bottom: 16px;
+}
+
+.logistics-card {
+  background: transparent;
+  border: none;
+  border-radius: 12px;
+  padding: 24px 28px;
+  box-shadow: none;
+}
+
+.logistics-card p {
+  margin: 0;
+}
+
+.logistics-card p + p {
+  margin-top: 8px;
+}
+
+.logistics-card a {
+  color: var(--accent-deep);
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(110, 138, 134, 0.35);
+}
+
+.logistics-card a:hover {
+  border-bottom-color: var(--accent-deep);
+}
+
+.venue-name {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text) !important;
+  margin-bottom: 4px !important;
+}
+
+.venue-address {
+  font-size: 0.97rem;
+  color: var(--text-soft) !important;
+  line-height: 1.7 !important;
+}
+
+.venue-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.venue-link-btn {
+  display: inline-block;
+  padding: 9px 18px;
+  background: #e8f0eb;
+  color: var(--accent-deep) !important;
+  border: 1px solid rgba(110, 138, 134, 0.18);
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none !important;
+  border-bottom: none !important;
+  transition: background 0.18s ease, transform 0.18s ease;
+}
+
+.venue-link-btn:hover {
+  background: #dce8e0;
+  transform: translateY(-1px);
+  border-bottom: none !important;
+}
+
+.transport-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+}
+
+.transport-card {
+  padding: 20px 22px;
+}
+
+.transport-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text) !important;
+  margin-bottom: 8px !important;
+  letter-spacing: 0.01em;
+}
+
+/* Registry section styles */
+.registry-text-body {
+  text-align: center !important;
+  max-width: 560px !important;
+  margin: 0 auto !important;
+  line-height: 1.9;
+}
+
+.registry-text-body a {
+  color: var(--accent-deep);
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(110, 138, 134, 0.35);
+}
+
+.registry-text-body a:hover {
   border-bottom-color: var(--accent-deep);
 }
 
@@ -312,8 +485,24 @@ body {
 @media (max-width: 640px) {
   .banner {
     height: 180px;
+.registry-grid {
+    grid-template-columns: 1fr;
+  }
+    
   }
 
+  .transport-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .logistics-card {
+    padding: 20px;
+  }
+
+  .logistics-intro-card {
+    padding: 18px;
+  }
+  
   .top-controls {
     padding-top: 14px;
   }
