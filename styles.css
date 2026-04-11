@@ -468,6 +468,40 @@ body {
   border-bottom-color: var(--accent-deep);
 }
 
+/* Registry / Future Fund styles */
+.registry-accounts {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+  max-width: 560px;
+  margin: 32px auto 0;
+}
+
+.registry-card {
+  text-align: left;
+}
+
+.registry-card p {
+  text-align: left !important;
+  max-width: none !important;
+  margin: 0 !important;
+}
+
+.registry-card p + p {
+  margin-top: 8px !important;
+}
+
+.registry-card a {
+  color: var(--accent-deep);
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(110, 138, 134, 0.35);
+}
+
+.registry-card a:hover {
+  border-bottom-color: var(--accent-deep);
+}
+
 /* Q&A section styles */
 .qanda-item {
   margin-bottom: 32px;
