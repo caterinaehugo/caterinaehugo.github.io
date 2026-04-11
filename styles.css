@@ -587,6 +587,19 @@ a:hover {
   }
 }
 
+.destination-card {
+  overflow: hidden;
+}
+
+.destination-photo {
+  display: block;
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 16px;
+  margin-bottom: 1rem;
+}
+
 @media (max-width: 640px) {
   .banner {
     height: 180px;
@@ -634,9 +647,10 @@ a:hover {
     padding-top: 28px;
   }
 
- 
+   .destination-photo {
+    height: 200px;
+  }
   
-
   .tab-link {
     font-size: 0.8rem;
     letter-spacing: 0.06em;
