@@ -477,6 +477,10 @@ a:hover {
   text-align: left;
 }
 
+#registry .logistics-page-intro {
+  margin-bottom: 8px !important;
+}
+
 .registry-card p {
   text-align: left !important;
   max-width: none !important;
